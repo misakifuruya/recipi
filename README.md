@@ -1,5 +1,31 @@
 # README
 
+## users テーブル
+
+| Column           | Type   | Options     |
+| ---------------- | ------ | ----------- |
+| username         | string |             |
+| profile_image_id | string |             |
+| email            | string | null,false  |
+| password         | string | null,false  |
+
+### Association
+- has_many  :recipis
+
+
+## recipi
+
+| Column  | Type   | Options    |
+| ------- | ------ | ---------- |
+| user_id | string | null,false |
+| title   | string | null,false |
+| body    | text   | null,false |
+
+### Association
+- belongs_to :users
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
