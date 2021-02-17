@@ -13,7 +13,7 @@
 - has_many  :recipis
 
 
-## recipi
+## recipe
 
 | Column  | Type   | Options    |
 | ------- | ------ | ---------- |
